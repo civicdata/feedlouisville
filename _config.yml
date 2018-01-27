@@ -1,0 +1,132 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Feed Louisville
+email: margeaux@civicdataalliance.org
+description: >- # this means to ignore newlines until "baseurl:"
+  Feed Louisville site for the Feed Louisville Hackathon in Louisville, KY
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+excerpt_separator: "<!--more-->"
+
+#Permalinks
+
+#permalink: /:title/
+#permalink: /:categories/:title/
+#permalink: /:year/:month/:day/:title.html
+
+#Finding solution for pagination, now is disabled
+
+# paginate: 6
+
+logo: /assets/images/shard-1-5x-3.png
+# favicon: flavicon.png
+navbar-logo: jorigamy-logo.svg
+
+author :
+  name : Margeaux Spring
+  email : margeaux@civicdatalliance.org
+  github : civicdatalliance
+  twitter : civicdataally
+  facebook: civicdataalliance
+  linkedin: margeauxspring
+  instagram: civcdataalliance
+  # pinterest:
+  # google: https://plus.google.com/u/0/b/114870349902392641766/105909498949786982602
+  # feedburner :
+
+google :
+    tracking_id : '' # Id google analitics
+    optimize_id : '' # I'id di google optimize per A/B Testing
+    tagmanager_id: '' # id di google tag manager
+    ad_client: '' # id google ADsense (to edit other id's of google ADsense go to /_includes/JB/ads-block-html )
+
+disqus :
+    # short_name :
+    # how to use
+    #      {% if site.disqus.short_name %}
+    #        {% include JB/disqus.html %}
+    #      {% endif %}
+
+
+# data for jekyll-seo-tags plugins
+social:
+  name: civicdataalliance
+  links:
+    - https://twitter.com/civicdataally
+    - https://www.facebook.com/civicdtaally
+    - https://github.com/civicdataalliance
+twitter:
+  username: civicdataally
+
+facebook:
+ # app_id: 509727322725898 #the app id from https://developers.facebook.com/
+ # admins: 1010094929028825 #the page ID from https://www.facebook.com/pg/lantoniotrento (page-link), left click about scroll down and find 'Page ID'
+ # publisher: 1010094929028825 #the page ID from https://www.facebook.com/pg/lantoniotrento (page-link), left click about scroll down and find 'Page ID'
+
+# Build settings
+markdown: kramdown
+
+#theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sass-converter
+  - jekyll-seo-tag
+
+#gems:
+#  - amp-jekyll
+
+#ampdir: amp
+
+
+
+#gallery
+
+# Collection settings
+collections:
+  photos:
+
+# Social settings
+500px_url:
+# facebook_url: https://facebook.com/lantoniotrento
+github_url:
+gitlab_url:
+slack_url: https://civicdata.slack.com
+twitter_url: https://twitter.com/civicdataally
+
+
+# Gallery section
+
+gallery-title: Event
+gallery-description: >- # this means to ignore newlines until "baseurl:"
+  Free Louisville Event Photos.
+
+
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']
